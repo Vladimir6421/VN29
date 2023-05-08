@@ -8,9 +8,7 @@ using System.Windows;
 
 namespace VN29
 {
-    /// <summary>
-    /// Логика взаимодействия для App.xaml
-    /// </summary>
+
     public partial class App : Application
     {
     }
