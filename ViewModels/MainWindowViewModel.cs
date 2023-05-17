@@ -26,6 +26,20 @@ namespace VN29.ViewModels
                 //}
             set => Set(ref _Title, value);
         }
+        #endregion 
+
+        #region Status : string - Статус программы
+
+        ///<summary>Статус программы</summary>
+        private string _Status = "Готово!!!";
+
+        ///<summary>Статус программы</summary>
+        public string Status
+        {   
+            get => _Status;
+            set => Set(ref _Status, value);
+        }
+
         #endregion
     }
 }

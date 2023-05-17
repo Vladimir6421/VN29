@@ -21,43 +21,45 @@
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
-            <StatusBarItem MinWidth="100" MaxWidth="400" >
-                <TextBlock Text="2760"/>
+            <StatusBarItem MinWidth="150" MaxWidth="350">
+                <TextBlock Text="{Binding Status}"/>
             </StatusBarItem>
+            
             <StatusBarItem>
                 <ProgressBar Height="10" Width="150" Value="75"/>
             </StatusBarItem>
         </StatusBar>
         <TabControl>
-            <TabItem Header="Вкладка 1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="63*"/>
-                        <RowDefinition Height="325*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="157*"/>
-                        <ColumnDefinition Width="637*"/>
-                    </Grid.ColumnDefinitions>
-                    <Rectangle Grid.Column="0" Grid.Row="0"
+            <TabItem Header="Вкладка 1"/>
+            <TabItem Header="Вкладка 2"></TabItem>
+            <Grid Width="794">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="63*"/>
+                    <RowDefinition Height="325*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="157*"/>
+                    <ColumnDefinition Width="637*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.Column="0" Grid.Row="0"
                                Margin="5, 25"
                                Fill="DarkOliveGreen" Stroke="BlueViolet"
                                StrokeThickness="3"
                                RadiusX="5" RadiusY="7"/>
-                    <Ellipse Grid.Column="1" Grid.Row="0"
+                <Ellipse Grid.Column="1" Grid.Row="0"
                              Fill="Red" Stroke="AntiqueWhite" StrokeThickness="10"/>
-                    <GridSplitter Grid.Column="0" Grid.RowSpan="2"
+                <GridSplitter Grid.Column="0" Grid.RowSpan="2"
                                   HorizontalAlignment="Right"
-                                  Width="5">
-                        
-                    </GridSplitter>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Вкладка 2"></TabItem>
+                                  Width="5"/>
+                <StatusBarItem MinWidth="100" MaxWidth="400" Margin="47,213,10,77" Grid.Row="1" >
+                    
+
+                </StatusBarItem>
+            </Grid>
         </TabControl>
-        
-    </DockPanel> 
-    
-    
-    
+
+    </DockPanel>
+
+
+
 </Window>
